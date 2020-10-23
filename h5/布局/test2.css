@@ -1,0 +1,39 @@
+.container{
+    position: relative;
+}
+
+.column{
+    /*
+        默认Float 类型的都是紧贴一行排布的，排满一行则换行 
+        首先放 middle ,空出左右padding .
+     */
+    float: left;
+}
+
+.center-wrap{
+    width: 100%;
+}
+.center-wrap .center{
+    background-color: aqua;
+     margin-left: 200px;
+    margin-right: 150px; 
+}
+
+.left{
+    width: 200px;
+    margin-left: -100%;
+    background-color: red;
+    /* 
+    相对的其左边的元素的距离 %是相对父元素的宽度，
+    相对middle,跨越100%宽度
+    */
+}
+
+.right{
+    width: 150px;
+    margin-left: -150px;
+    background-color: bisque;
+    /* 
+    相对右边距 移动
+     */
+}
